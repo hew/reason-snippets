@@ -1,7 +1,7 @@
 {
     "name": "reason-snippets",
-    "displayName": "JS Snippets",
-    "description": "Code snippets for javascript",
+    "displayName": "Reason Snippets",
+    "description": "Code snippets for reasonml",
     "version": "0.0.1",
     "publisher": "hew",
     "icon": "images/hummus-icon.png",
@@ -28,19 +28,15 @@
     "contributes": {
         "snippets": [
             {
-                "language": "javascript",
+                "language": "reasonml",
                 "path": "./snippets/snippets.json"
             },
             {
-                "language": "javascriptreact",
+                "language": "reason",
                 "path": "./snippets/snippets.json"
             },
             {
-                "language": "typescript",
-                "path": "./snippets/snippets.json"
-            },
-            {
-                "language": "typescriptreact",
+                "language": "ocaml",
                 "path": "./snippets/snippets.json"
             }
         ]
