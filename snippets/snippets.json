@@ -40,7 +40,7 @@
     ]
   },
   "promise catch/error": {
-    "prefix": "sw",
+    "prefix": "prom",
     "description": "Switch",
     "body": [
       "$1",

@@ -1,26 +1,29 @@
 # reason-snippets (wip)
 
-Basic JS snippets.
-
-Also an attempt to share JS snippets with VS code and vim.
+Basic Reason snippets.
 
 ## Installation
 
-For VS Code: Not published to vs-code marketplace yet.
+For VS Code: 
+
+* **Not published to vs-code marketplace yet**.
 
 For Vim: 
 
 * `Plug 'neoclide/coc.nvim'`
-* `:CocInstall https://github.com/andys8/reason-snippets.git#master`
+* `:CocInstall https://github.com/hew/reason-snippets.git#master`
 * `:so %MYVIMRC`
 
 ## Snippets
 
-|  Trigger | Content       |
-| -------: | ------------- |
-|  `cl→`   | console.log   |
-|  `f→`    | arrow func    |
-|  `b→`    | braces        |
+|  Trigger  | Content       |
+| -------:  | ------------- |
+|  `sc→`    | stateless*    |
+|  `rc→`    | reducer*      |
+|  `sw→`    | switch        |
+|  `prom→`  | promise       |
+
+* component
 
 
 ## Settings
