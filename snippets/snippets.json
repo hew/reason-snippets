@@ -1,0 +1,51 @@
+{
+  "stateless component": {
+    "prefix": "sc",
+    "description": "Stateless Component",
+    "body": [
+      "let component = ReasonReact.statelessComponent(\"$1\");",
+      "",
+      "let make = (_children) => {",
+      "  ...component",
+      "  render: (_self) => $2 ",
+      "};"
+    ]
+  },
+  "reducer component": {
+    "prefix": "rc",
+    "description": "Reducer Component",
+    "body": [
+      "type state = | $2;",
+      "type action = | $3;",
+      "",
+      "let component = ReasonReact.reducerComponent(\"$4\");",
+      "let make = (_children) => {",
+      "  ...component",
+      "  intialState: (_) => Initial",
+      "  reducer: (action, state) =>",
+      "  switch action {",
+      "    | Do => ReasonReact.Update({...state, $1:$1 })",
+         "},",
+      "  render: (_self) => $2 ",
+      "};"
+    ]
+  },
+  "switch component": {
+    "prefix": "sw",
+    "description": "Switch",
+    "body": [
+      "switch ($1) {",
+      "  | $2 => $3",
+      "},"
+    ]
+  },
+  "promise catch/error": {
+    "prefix": "sw",
+    "description": "Switch",
+    "body": [
+      "$1",
+      "|> then_($2 => $3 |> resolve)",
+      "|> error(err => Js.log(err) |> resolve)"
+    ]
+  }
+}
