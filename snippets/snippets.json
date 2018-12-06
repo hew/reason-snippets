@@ -6,7 +6,7 @@
       "let component = ReasonReact.statelessComponent(\"$1\");",
       "",
       "let make = (_children) => {",
-      "  ...component",
+      "  ...component,",
       "  render: (_self) => $2 ",
       "};"
     ]
@@ -20,8 +20,8 @@
       "",
       "let component = ReasonReact.reducerComponent(\"$4\");",
       "let make = (_children) => {",
-      "  ...component",
-      "  intialState: (_) => Initial",
+      "  ...component,",
+      "  intialState: (_) => Initial,",
       "  reducer: (action, state) =>",
       "  switch action {",
       "    | Do => ReasonReact.Update({...state, $1:$1 })",
